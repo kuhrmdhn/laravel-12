@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
-</head>
-<body>
-    <p>My Instagram: 
-        <a href="{{ $instagram }}">instagram</a>
-    </p>
-</body>
-</html>
+@php
+    $contactLists = [
+        ["title" => "Instagram", "value" => "https://www.instagram.com/kuh.rmdhn/"],
+        ["title" => "Tiktok", "value" => "https://www.tiktok.com/@kuhrmdhn.dev"],
+    ];
+
+    $contactLength = count($contactLists);
+@endphp
+<x-layout>
+    @if ($contactLength > 1)
+        <p>I have {{$contactLength}} Contacts</p>
+    @endif
+    @foreach ($contactLists as $contact)
+        <p>
+            Here is My
+            <a href="{{ $contact["value"] }}">{{$contact["title"]}}</a>
+        </p>
+    @endforeach
+</x-layout>
