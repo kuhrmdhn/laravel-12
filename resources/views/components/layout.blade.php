@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuhrmdhn | Laravel</title>
+    @vite('resources/css/app.css')
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/project/123">Project</a></li>
-            <li><a href="/blog/html">HTML Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/personal-web">Personal Web</a></li>
+            <li><x-ui.link href="/">Home</x-ui.link></li>
+            <li><x-ui.link href="/about">About</x-ui.link></li>
+            <li><x-ui.link href="/project/123">Project</x-ui.link></li>
+            <li><x-ui.link href="/blog/html">HTML Blog</x-ui.link></li>
+            <li><x-ui.link href="/contact">Contact</x-ui.link></li>
+            <li><x-ui.link href="/personal-web">Personal Web</x-ui.link></li>
         </ul>
     </nav>
     <main>
