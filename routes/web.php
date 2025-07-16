@@ -28,7 +28,7 @@ Route::get('/contact', function () {
 });
 // 3. Using with()
 Route::get('/personal-web', function () {
-    $personalWebUrl = "https://kuhrmdhn.vercel.app";
+    $personalWebUrl = "https://kuhrmdhn.my.id";
     return view('personalWeb')->with('personalWebUrl', $personalWebUrl);
 });
 

@@ -6,14 +6,16 @@
 
     $contactLength = count($contactLists);
 @endphp
+
 <x-layout>
     @if ($contactLength > 1)
-        <p>I have {{$contactLength}} Contacts</p>
+        <p>I have {{ $contactLength }} Contacts</p>
     @endif
+
     @foreach ($contactLists as $contact)
         <p>
             Here is My
-            <a href="{{ $contact["value"] }}">{{$contact["title"]}}</a>
+            <x-ui.link href="{{ $contact['value'] }}">{{ $contact['title'] }}</x-ui.link>
         </p>
     @endforeach
 </x-layout>
