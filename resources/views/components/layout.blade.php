@@ -12,7 +12,7 @@
 <body>
     <nav>
         <ul>
-            <li><x-ui.link href="/">Home</x-ui.link></li>
+            <li><x-ui.link :isActive="true" href="/">Home</x-ui.link></li>
             <li><x-ui.link href="/about">About</x-ui.link></li>
             <li><x-ui.link href="/project/123">Project</x-ui.link></li>
             <li><x-ui.link href="/blog/html">HTML Blog</x-ui.link></li>
