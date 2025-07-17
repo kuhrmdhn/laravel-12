@@ -10,16 +10,7 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><x-ui.link :isActive="true" href="/">Home</x-ui.link></li>
-            <li><x-ui.link href="/about">About</x-ui.link></li>
-            <li><x-ui.link href="/project/123">Project</x-ui.link></li>
-            <li><x-ui.link href="/blog/html">HTML Blog</x-ui.link></li>
-            <li><x-ui.link href="/contact">Contact</x-ui.link></li>
-            <li><x-ui.link href="/personal-web">Personal Web</x-ui.link></li>
-        </ul>
-    </nav>
+    <x-element.navbar />
     <main>
         {{ $slot }}
     </main>
